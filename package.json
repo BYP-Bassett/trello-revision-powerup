@@ -4,7 +4,7 @@
   "description": "A Trello Power-Up for creating and revising art cards through a secure Apps Script endpoint.",
   "main": "src/client.js",
   "scripts": {
-    "build": "mkdir -p dist && cp -r src/* dist/ && cp src/manifest.json dist/",
+    "build": "mkdir -p dist && cp -r src/* dist/ && cp src/manifest.json dist/ && cp src/client.html dist/",
     "start": "npx serve src"
   },
   "author": "BYP-Bassett",

@@ -1,7 +1,6 @@
 /* global TrelloPowerUp */
 const t = TrelloPowerUp.iframe();
 
-// helper: get today's date as MMDDYY
 function getTodayCode() {
   const d = new Date();
   const mm = String(d.getMonth() + 1).padStart(2, "0");
@@ -10,7 +9,6 @@ function getTodayCode() {
   return `${mm}${dd}${yy}`;
 }
 
-// main button action
 async function addRevisionChecklist() {
   try {
     const card = await t.card("id");
@@ -32,3 +30,7 @@ async function addRevisionChecklist() {
     t.alert({ message: "Error adding revision checklist.", duration: 6 });
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  addRevisionChecklist();
+});

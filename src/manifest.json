@@ -1,8 +1,8 @@
 {
   "manifest_version": 1,
-  "name": "Add Revision Checklist",
+  "name": "Trello Revision Power-Up",
   "display_name": "Add Revision Checklist",
-  "description": "Adds a checklist with today's date and next sequential R#",
+  "description": "Adds a new revision checklist via secure Apps Script endpoint.",
   "author": "Steve Bassett",
   "icon": {
     "url": "https://cdn-icons-png.flaticon.com/512/992/992700.png"
@@ -12,7 +12,3 @@
       "url": "index.html",
       "height": 50
     }
-  },
-  "connectors": {},
-  "authorization": {}
-}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 1,
+  "name": "Add Revision Checklist",
+  "display_name": "Add Revision Checklist",
+  "description": "Adds a checklist with today's date and next sequential R#",
+  "author": "Steve Bassett",
+  "icon": {
+    "url": "https://cdn-icons-png.flaticon.com/512/992/992700.png"
+  },
+  "capabilities": {
+    "card-buttons": {
+      "url": "index.html",
+      "height": 50
+    }
+  },
+  "connectors": {},
+  "authorization": {}
+}

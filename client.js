@@ -22,18 +22,17 @@ async function addRevisionChecklist() {
       "https://script.google.com/macros/s/AKfycbzQiG-5XNdwT1ZKgD_uJcrNYlG3YlC_wqivkCj_gIkwy5fdfI1Q9BVKyaMqVPWk3Il5tw/exec",
       {
         method: "POST",
+        mode: "no-cors",              // 👈 allows Trello to call Google
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       }
     );
 
-    t.alert({ message: "Checklist added successfully.", duration: 4 });
+    t.alert({ message: "Checklist request sent.", duration: 4 });
   } catch (err) {
     console.error("Error adding revision checklist:", err);
     t.alert({ message: "Error trying to create checklist.", duration: 6 });
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  addRevisionChecklist();
-});
+document.addEventListener("DOMContentLoaded", addRevisionChecklist);

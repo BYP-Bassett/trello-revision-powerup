@@ -1,0 +1,11 @@
+{
+  "name": "trello-revision-powerup",
+  "version": "1.0.0",
+  "description": "A Trello Power-Up for creating and revising art cards.",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src/* dist/"
+  },
+  "author": "BYP-Bassett",
+  "license": "MIT"
+}

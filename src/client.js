@@ -18,7 +18,7 @@ async function addRevisionChecklist() {
       secret: "YOUR_ENDPOINT_SECRET"
     };
 
-    await fetch("YOUR_APPS_SCRIPT_WEBAPP_URL", {
+    await fetch("https://script.google.com/macros/library/d/1-_lAULoR_iZvVIsqKlpdU__-DekHKfstzG6OznONaRbl-WTMf2IZEGwa/3", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)

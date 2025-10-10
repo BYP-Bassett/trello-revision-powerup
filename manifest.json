@@ -12,3 +12,9 @@
       "url": "index.html",
       "height": 50
     }
+  },
+  "connectors": {},
+  "authorization": {
+    "type": "none"
+  }
+}
